@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slider {
+  position: relative;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: -webkit-center;
 }
 
-.App-link {
-  color: #61dafb;
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  height: 8%;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  height: 8%;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+
+
+/* WEBSITE */
+.website {
+  /* background-image: url('https://img.freepik.com/premium-photo/texture-white-crumpled-paper-background_7636-2088.jpg'); */
+  background-image: url('https://img.freepik.com/premium-photo/old-crumpled-paper-texture-background_118047-7011.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* HEADER */
+.header {
+  text-align: center;
+  font-family: alan;
+  font-size: 2em;
+}
+
+.name {
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Creates a black shadow with a 2px horizontal and vertical offset, 4px blur, and 50% opacity */
+}
+
+.navbarHeading {
+  padding-left: 50px;
+  padding-right: 50px;
+  transition-duration: 1s;
+}
+
+.navbarHeading:hover {
+  color: #6592cc;
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+
+/* COMPONENT CARDS */
+.componentCard {
+  width: 70vw;
+  height: 600px;
+  /* background-color: bisque; */
+  /* background-image: url('https://img.freepik.com/premium-photo/texture-white-crumpled-paper-background_7636-2088.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  font-family: alan;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  /* backdrop-filter: blur(5px); */
+}
+
+.componentCard h1 {
+  font-size: 4em;
+}
+
+.componentCard p {
+  font-size: 2em;
+}
+
+
+/* ABOUT ME */
+.introduction {
+  font-size: 2em;
+}
+
+.typer {
+  justify-content: center;
+}
+
+.typewriterText {
+  font-size: 1.8em;
+}
+
+.aboutText {
+  font-size: 1.5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+
+
+/* EXPERIENCE */
+.experienceTitle {
+  font-size: 1.8em;
+}
+
+.experienceLocation {
+  font-size: 1.5em;
+}
+
+.titleTwo {
+  color: #6592cc;
+}
+
+
+/* PROJECTS */
+.projectTitle {
+  font-size: 1.8em;
+  transition-duration: 0.5s;
+}
+
+.projectTitle:hover {
+  color: #6592cc;
+  transition-duration: 0.5s;
+}
+
+.projectDescription {
+  font-size: 1.5em;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.tag {
+  font-size: 1.2em;
+  border-color: #000;
+}
+
+
+
+
+
+/* FOR FUN */
+.funText {
+  font-size: 1.8em;
+}
+
+
+
+/* ICONS */
+.arrow {
+  transition-duration: 0.5s;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+
+/* SOCIALS */
+.socialsDescription {
+  font-size: 1.8em;
+}
+
+.socials {
+  height: 50%;
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: alan;
+  /* src: url(../public/Myfont-Regular.ttf); */
+  src: url(../public/Alan2-Regular.ttf);
+}
+
+.alan {
+  font-family: alan;
+  font-size: 3em;
 }
