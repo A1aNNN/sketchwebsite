@@ -10,8 +10,7 @@ const Youtube = () => {
                 width="580" height="327" />
         </div>
         <Box className="youtubeText">
-            I've been trying to practice my handstands this past year.
-            This is how I attempted to learn the handstand pushup.
+            My handstand pushup progression!
         </Box>
     </Box>
   )
