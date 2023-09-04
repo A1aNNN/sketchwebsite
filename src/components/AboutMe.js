@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <Box className='componentCard'>
       <h1>
-        About me
+        About me!!!
       </h1>
       
 
