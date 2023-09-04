@@ -1,0 +1,24 @@
+/* AnimatedScribble.css */
+.animated-scribble {
+    /* Define your scribble animation styles */
+    width: 100%; /* Adjust width and height as needed */
+    height: 80%;
+    background: url(./../images/TransitionScribble2.png) no-repeat center center; /* Use your scribble image */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-duration: 1s;
+    /* opacity: 0;
+    animation: fadeIn 1s forwards; Define your animation name and duration */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
