@@ -10,14 +10,14 @@ const Socials = () => {
         <h1>Socials</h1>
         <h2 className='socialsDescription'>If you want to connect with me on other platforms!</h2>
 
-        <Box display="flex" flexDirection="row" paddingTop='40px'>
-            <a href='https://www.linkedin.com/in/alan-wang-a577b81b5/' target='_blank'>
+        <Box display="flex" flexDirection="row" justifyContent="center" paddingTop='40px'>
+            <a className='' href='https://www.linkedin.com/in/alan-wang-a577b81b5/' target='_blank'>
                 <img className='socials linkedin' src={linkedin}/>
             </a>
-            <a href='https://www.youtube.com/@alanwang093/featured' target='_blank'>
+            <a className='' href='https://www.youtube.com/@alanwang093/featured' target='_blank'>
                 <img className='socials youtube' src={youtube}/>
             </a>
-            <a href='https://github.com/A1aNNN' target='_blank'>
+            <a className='' href='https://github.com/A1aNNN' target='_blank'>
                 <img className='socials github' src={github}/>
             </a>
         </Box>
